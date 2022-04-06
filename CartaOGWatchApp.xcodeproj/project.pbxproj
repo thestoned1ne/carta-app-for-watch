@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3586EC127FBC6B5006378B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3586EC027FBC6B5006378B8 /* Constants.swift */; };
+		D3704B8127EFCF64007FF501 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3704B8027EFCF64007FF501 /* Bluetooth.swift */; };
+		D3704B8427EFD4A3007FF501 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3704B8227EFD499007FF501 /* extensions.swift */; };
+		D3704B8627EFDD49007FF501 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3704B8527EFDD49007FF501 /* ScanView.swift */; };
+		D3E4214427EFA8F70005AA89 /* Carta Controller.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D3E4214327EFA8F70005AA89 /* Carta Controller.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3E4214927EFA8F80005AA89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E4214827EFA8F80005AA89 /* Assets.xcassets */; };
+		D3E4214F27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3E4214E27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3E4215427EFA8F80005AA89 /* CartaOGWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4215327EFA8F80005AA89 /* CartaOGWatchAppApp.swift */; };
+		D3E4215627EFA8F80005AA89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4215527EFA8F80005AA89 /* MainView.swift */; };
+		D3E4215827EFA8F80005AA89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4215727EFA8F80005AA89 /* NotificationController.swift */; };
+		D3E4215A27EFA8F80005AA89 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4215927EFA8F80005AA89 /* NotificationView.swift */; };
+		D3E4215C27EFA8F80005AA89 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4215B27EFA8F80005AA89 /* ComplicationController.swift */; };
+		D3E4215E27EFA8F90005AA89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E4215D27EFA8F90005AA89 /* Assets.xcassets */; };
+		D3E4216127EFA8F90005AA89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E4216027EFA8F90005AA89 /* Preview Assets.xcassets */; };
+		D3E4217727EFA8F90005AA89 /* CartaOGWatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4217627EFA8F90005AA89 /* CartaOGWatchAppUITests.swift */; };
+		D3E4217927EFA8F90005AA89 /* CartaOGWatchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4217827EFA8F90005AA89 /* CartaOGWatchAppUITestsLaunchTests.swift */; };
+		D3E84DE527F008C700D04A10 /* DabTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E84DE427F008C700D04A10 /* DabTimeView.swift */; };
+		D3E84DE727F00E0400D04A10 /* DabTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E84DE627F00E0400D04A10 /* DabTempView.swift */; };
+		D3E84DEB27F2969A00D04A10 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E84DEA27F2969A00D04A10 /* Session.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3E4214527EFA8F70005AA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E4213927EFA8F70005AA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E4214227EFA8F70005AA89;
+			remoteInfo = "CartaOGWatchApp WatchKit App";
+		};
+		D3E4215027EFA8F80005AA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E4213927EFA8F70005AA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E4214D27EFA8F80005AA89;
+			remoteInfo = "CartaOGWatchApp WatchKit Extension";
+		};
+		D3E4216927EFA8F90005AA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E4213927EFA8F70005AA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E4214D27EFA8F80005AA89;
+			remoteInfo = "CartaOGWatchApp WatchKit Extension";
+		};
+		D3E4217327EFA8F90005AA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E4213927EFA8F70005AA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E4214227EFA8F70005AA89;
+			remoteInfo = "CartaOGWatchApp WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3E4217F27EFA8F90005AA89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3E4214F27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4218327EFA8F90005AA89 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D3E4214427EFA8F70005AA89 /* Carta Controller.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D3586EC027FBC6B5006378B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3704B8027EFCF64007FF501 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		D3704B8227EFD499007FF501 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		D3704B8527EFDD49007FF501 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		D3E4213F27EFA8F70005AA89 /* Carta Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carta Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4214327EFA8F70005AA89 /* Carta Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carta Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4214827EFA8F80005AA89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E4214E27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CartaOGWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4215327EFA8F80005AA89 /* CartaOGWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaOGWatchAppApp.swift; sourceTree = "<group>"; };
+		D3E4215527EFA8F80005AA89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D3E4215727EFA8F80005AA89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D3E4215927EFA8F80005AA89 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D3E4215B27EFA8F80005AA89 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D3E4215D27EFA8F90005AA89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E4216027EFA8F90005AA89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3E4216227EFA8F90005AA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E4216327EFA8F90005AA89 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D3E4216827EFA8F90005AA89 /* CartaOGWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartaOGWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4217227EFA8F90005AA89 /* CartaOGWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartaOGWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4217627EFA8F90005AA89 /* CartaOGWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaOGWatchAppUITests.swift; sourceTree = "<group>"; };
+		D3E4217827EFA8F90005AA89 /* CartaOGWatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaOGWatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3E84DE427F008C700D04A10 /* DabTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DabTimeView.swift; sourceTree = "<group>"; };
+		D3E84DE627F00E0400D04A10 /* DabTempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DabTempView.swift; sourceTree = "<group>"; };
+		D3E84DEA27F2969A00D04A10 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3E4214B27EFA8F80005AA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4216527EFA8F90005AA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4216F27EFA8F90005AA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3E4213827EFA8F70005AA89 = {
+			isa = PBXGroup;
+			children = (
+				D3E4214727EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */,
+				D3E4215227EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */,
+				D3E4217527EFA8F90005AA89 /* CartaOGWatchAppUITests */,
+				D3E4214027EFA8F70005AA89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3E4214027EFA8F70005AA89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E4213F27EFA8F70005AA89 /* Carta Controller.app */,
+				D3E4214327EFA8F70005AA89 /* Carta Controller.app */,
+				D3E4214E27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex */,
+				D3E4216827EFA8F90005AA89 /* CartaOGWatchAppTests.xctest */,
+				D3E4217227EFA8F90005AA89 /* CartaOGWatchAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E4214727EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D3E4214827EFA8F80005AA89 /* Assets.xcassets */,
+			);
+			path = "CartaOGWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		D3E4215227EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3586EC027FBC6B5006378B8 /* Constants.swift */,
+				D3E4215327EFA8F80005AA89 /* CartaOGWatchAppApp.swift */,
+				D3704B8027EFCF64007FF501 /* Bluetooth.swift */,
+				D3E84DEA27F2969A00D04A10 /* Session.swift */,
+				D3E4215527EFA8F80005AA89 /* MainView.swift */,
+				D3E84DE427F008C700D04A10 /* DabTimeView.swift */,
+				D3E84DE627F00E0400D04A10 /* DabTempView.swift */,
+				D3704B8527EFDD49007FF501 /* ScanView.swift */,
+				D3E4215727EFA8F80005AA89 /* NotificationController.swift */,
+				D3E4215927EFA8F80005AA89 /* NotificationView.swift */,
+				D3E4215B27EFA8F80005AA89 /* ComplicationController.swift */,
+				D3704B8227EFD499007FF501 /* extensions.swift */,
+				D3E4215D27EFA8F90005AA89 /* Assets.xcassets */,
+				D3E4216227EFA8F90005AA89 /* Info.plist */,
+				D3E4216327EFA8F90005AA89 /* PushNotificationPayload.apns */,
+				D3E4215F27EFA8F90005AA89 /* Preview Content */,
+			);
+			path = "CartaOGWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D3E4215F27EFA8F90005AA89 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3E4216027EFA8F90005AA89 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3E4217527EFA8F90005AA89 /* CartaOGWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E4217627EFA8F90005AA89 /* CartaOGWatchAppUITests.swift */,
+				D3E4217827EFA8F90005AA89 /* CartaOGWatchAppUITestsLaunchTests.swift */,
+			);
+			path = CartaOGWatchAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3E4213E27EFA8F70005AA89 /* CartaOGWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4218427EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp" */;
+			buildPhases = (
+				D3E4213D27EFA8F70005AA89 /* Resources */,
+				D3E4218327EFA8F90005AA89 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E4214627EFA8F70005AA89 /* PBXTargetDependency */,
+			);
+			name = CartaOGWatchApp;
+			productName = CartaOGWatchApp;
+			productReference = D3E4213F27EFA8F70005AA89 /* Carta Controller.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D3E4214227EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4218027EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp WatchKit App" */;
+			buildPhases = (
+				D3E4214127EFA8F70005AA89 /* Resources */,
+				D3E4217F27EFA8F90005AA89 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E4215127EFA8F80005AA89 /* PBXTargetDependency */,
+			);
+			name = "CartaOGWatchApp WatchKit App";
+			productName = "CartaOGWatchApp WatchKit App";
+			productReference = D3E4214327EFA8F70005AA89 /* Carta Controller.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D3E4214D27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4217C27EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp WatchKit Extension" */;
+			buildPhases = (
+				D3E4214A27EFA8F80005AA89 /* Sources */,
+				D3E4214B27EFA8F80005AA89 /* Frameworks */,
+				D3E4214C27EFA8F80005AA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CartaOGWatchApp WatchKit Extension";
+			productName = "CartaOGWatchApp WatchKit Extension";
+			productReference = D3E4214E27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D3E4216727EFA8F90005AA89 /* CartaOGWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4218727EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchAppTests" */;
+			buildPhases = (
+				D3E4216427EFA8F90005AA89 /* Sources */,
+				D3E4216527EFA8F90005AA89 /* Frameworks */,
+				D3E4216627EFA8F90005AA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E4216A27EFA8F90005AA89 /* PBXTargetDependency */,
+			);
+			name = CartaOGWatchAppTests;
+			productName = CartaOGWatchAppTests;
+			productReference = D3E4216827EFA8F90005AA89 /* CartaOGWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3E4217127EFA8F90005AA89 /* CartaOGWatchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4218A27EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchAppUITests" */;
+			buildPhases = (
+				D3E4216E27EFA8F90005AA89 /* Sources */,
+				D3E4216F27EFA8F90005AA89 /* Frameworks */,
+				D3E4217027EFA8F90005AA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E4217427EFA8F90005AA89 /* PBXTargetDependency */,
+			);
+			name = CartaOGWatchAppUITests;
+			productName = CartaOGWatchAppUITests;
+			productReference = D3E4217227EFA8F90005AA89 /* CartaOGWatchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3E4213927EFA8F70005AA89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D3E4213E27EFA8F70005AA89 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					D3E4214227EFA8F70005AA89 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					D3E4214D27EFA8F80005AA89 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					D3E4216727EFA8F90005AA89 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D3E4214D27EFA8F80005AA89;
+					};
+					D3E4217127EFA8F90005AA89 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D3E4214227EFA8F70005AA89;
+					};
+				};
+			};
+			buildConfigurationList = D3E4213C27EFA8F70005AA89 /* Build configuration list for PBXProject "CartaOGWatchApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3E4213827EFA8F70005AA89;
+			productRefGroup = D3E4214027EFA8F70005AA89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3E4213E27EFA8F70005AA89 /* CartaOGWatchApp */,
+				D3E4214227EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */,
+				D3E4214D27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */,
+				D3E4216727EFA8F90005AA89 /* CartaOGWatchAppTests */,
+				D3E4217127EFA8F90005AA89 /* CartaOGWatchAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3E4213D27EFA8F70005AA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4214127EFA8F70005AA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E4214927EFA8F80005AA89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4214C27EFA8F80005AA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E4216127EFA8F90005AA89 /* Preview Assets.xcassets in Resources */,
+				D3E4215E27EFA8F90005AA89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4216627EFA8F90005AA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4217027EFA8F90005AA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3E4214A27EFA8F80005AA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E4215827EFA8F80005AA89 /* NotificationController.swift in Sources */,
+				D3704B8627EFDD49007FF501 /* ScanView.swift in Sources */,
+				D3E4215627EFA8F80005AA89 /* MainView.swift in Sources */,
+				D3E4215C27EFA8F80005AA89 /* ComplicationController.swift in Sources */,
+				D3E84DE727F00E0400D04A10 /* DabTempView.swift in Sources */,
+				D3704B8427EFD4A3007FF501 /* extensions.swift in Sources */,
+				D3E84DE527F008C700D04A10 /* DabTimeView.swift in Sources */,
+				D3E84DEB27F2969A00D04A10 /* Session.swift in Sources */,
+				D3E4215427EFA8F80005AA89 /* CartaOGWatchAppApp.swift in Sources */,
+				D3704B8127EFCF64007FF501 /* Bluetooth.swift in Sources */,
+				D3E4215A27EFA8F80005AA89 /* NotificationView.swift in Sources */,
+				D3586EC127FBC6B5006378B8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4216427EFA8F90005AA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E4216E27EFA8F90005AA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E4217927EFA8F90005AA89 /* CartaOGWatchAppUITestsLaunchTests.swift in Sources */,
+				D3E4217727EFA8F90005AA89 /* CartaOGWatchAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3E4214627EFA8F70005AA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E4214227EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */;
+			targetProxy = D3E4214527EFA8F70005AA89 /* PBXContainerItemProxy */;
+		};
+		D3E4215127EFA8F80005AA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E4214D27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */;
+			targetProxy = D3E4215027EFA8F80005AA89 /* PBXContainerItemProxy */;
+		};
+		D3E4216A27EFA8F90005AA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E4214D27EFA8F80005AA89 /* CartaOGWatchApp WatchKit Extension */;
+			targetProxy = D3E4216927EFA8F90005AA89 /* PBXContainerItemProxy */;
+		};
+		D3E4217427EFA8F90005AA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E4214227EFA8F70005AA89 /* CartaOGWatchApp WatchKit App */;
+			targetProxy = D3E4217327EFA8F90005AA89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3E4217A27EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3E4217B27EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3E4217D27EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CartaOGWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CartaOGWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CartaOGWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = CartaOGWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth will be used to control your Carta vaporizer sessions.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D3E4217E27EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CartaOGWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CartaOGWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CartaOGWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = CartaOGWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth will be used to control your Carta vaporizer sessions.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D3E4218127EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CartaOGWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp.watchkitapp;
+				PRODUCT_NAME = "Carta Controller";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D3E4218227EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CartaOGWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp.watchkitapp;
+				PRODUCT_NAME = "Carta Controller";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D3E4218527EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp;
+				PRODUCT_NAME = "Carta Controller";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3E4218627EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchApp;
+				PRODUCT_NAME = "Carta Controller";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3E4218827EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartaOGWatchApp WatchKit Extension.appex/CartaOGWatchApp WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D3E4218927EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartaOGWatchApp WatchKit Extension.appex/CartaOGWatchApp WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D3E4218B27EFA8F90005AA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CartaOGWatchApp WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D3E4218C27EFA8F90005AA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMM2U3ND73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian91292.CartaOGWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CartaOGWatchApp WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3E4213C27EFA8F70005AA89 /* Build configuration list for PBXProject "CartaOGWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4217A27EFA8F90005AA89 /* Debug */,
+				D3E4217B27EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4217C27EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4217D27EFA8F90005AA89 /* Debug */,
+				D3E4217E27EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4218027EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4218127EFA8F90005AA89 /* Debug */,
+				D3E4218227EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4218427EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4218527EFA8F90005AA89 /* Debug */,
+				D3E4218627EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4218727EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4218827EFA8F90005AA89 /* Debug */,
+				D3E4218927EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4218A27EFA8F90005AA89 /* Build configuration list for PBXNativeTarget "CartaOGWatchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E4218B27EFA8F90005AA89 /* Debug */,
+				D3E4218C27EFA8F90005AA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3E4213927EFA8F70005AA89 /* Project object */;
+}
