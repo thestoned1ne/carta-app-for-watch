@@ -11,7 +11,8 @@ import CoreBluetooth
 struct MainView: View {
     var bluetooth = Bluetooth.shared
     var session: Session;
-    @State private var timer: Timer?;
+    @State private var syncTimer: Timer?;
+    @State private var sendDabsTimer: Timer?;
     @State private var doInitialSetup = true;
     @State private var scanPresented: Bool = false;
     @State private var dabTimePresented: Bool = false;
@@ -30,9 +31,6 @@ struct MainView: View {
     @State private var atomizerTimeRemaining: Float = 0;
     @State private var tempDisplay: String;
     @State private var timeDisplay: String;
-    //@State private var sessionTimeValue: String = "1:30";
-    //@State private var sessionTempValue: String = "572";
-    //@State private var sessionTempIdx: UInt8 = 15;
     @State private var dabCount: UInt = 0;
     @State private var flowerCount: UInt = 0;
     
@@ -163,7 +161,7 @@ struct MainView: View {
             
         }
         
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+        syncTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             if(dabCount == 0 && flowerCount == 0 || trySyncData) {
                 let syncData: [UInt8] = [0xEE, 0x00, 0x0C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xEE];
                 current.writeValue(Data(syncData), for: writeCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
@@ -245,22 +243,29 @@ struct MainView: View {
     }
     
     func sendDabs() {
-        guard let current = bluetooth.current else {
-            return
+        if(sendDabsTimer != nil) {
+            sendDabsTimer?.invalidate();
         }
-        let mainService = self.getMainService()
-        guard let service = mainService else {
-            return
-        }
-        let writeCharacteristic = self.getWriteCharacteristic(service: service)
-        guard let characteristic = writeCharacteristic else {
-            return
-        }
-        
-        let temp = session.getTempFromIndex(index: session.tempIdx);
-        let time = session.getTimeFromIndex(index: session.timeIdx);
-        print("Starting session at " + temp + "F for " + time)
-        current.writeValue(Data([204, 0, 12, UInt8(session.tempIdx), 0, 0, UInt8(self.timeStringToSeconds(time: time)), 0, 0, 85, 0, 204]), for: characteristic, type: CBCharacteristicWriteType.withoutResponse)
+        sendDabsTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { timer in
+            guard let current = bluetooth.current else {
+                return
+            }
+            let mainService = self.getMainService()
+            guard let service = mainService else {
+                return
+            }
+            let writeCharacteristic = self.getWriteCharacteristic(service: service)
+            guard let characteristic = writeCharacteristic else {
+                return
+            }
+            let temp = session.getTempFromIndex(index: session.tempIdx);
+            let time = session.getTimeFromIndex(index: session.timeIdx);
+            print("Starting session at " + temp + "F for " + time)
+            current.writeValue(Data([204, 0, 12, UInt8(session.tempIdx), 0, 0, UInt8(self.timeStringToSeconds(time: time)), 0, 0, 85, 0, 204]), for: characteristic, type: CBCharacteristicWriteType.withoutResponse);
+            
+            sendDabsTimer?.invalidate();
+            sendDabsTimer = nil;
+        });
     }
     
     func sendValue(_ value: Float) {
@@ -309,7 +314,7 @@ extension MainView: BluetoothProtocol {
             bluetooth.stopScanning();
             isConnected = true
             if(doInitialSetup || trySyncData) {
-                timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { timer in
+                syncTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { timer in
                     if(!doInitialSetup) {
                         print("Initial setup completed!")
                         timer.invalidate()
